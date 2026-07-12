@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="YF monogram">
+  <style>
+    rect { fill: #365f51; }
+    text { fill: #f7faf8; font: 700 24px system-ui, sans-serif; letter-spacing: -1px; }
+    @media (prefers-color-scheme: dark) { rect { fill: #8eb9a7; } text { fill: #0d1914; } }
+  </style>
+  <rect width="64" height="64" rx="12"/>
+  <text x="32" y="40" text-anchor="middle">YF</text>
+</svg>

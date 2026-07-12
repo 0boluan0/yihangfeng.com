@@ -1,85 +1,139 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>网站功能测试页</title>
-  <style>
-    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
-    body { max-width: 900px; margin: auto; padding: 2rem; line-height: 1.6; }
-    section { margin: 2rem 0; padding: 1.25rem; border: 1px solid #8886; border-radius: 12px; }
-    img, video { max-width: 100%; }
-    table { width: 100%; border-collapse: collapse; }
-    th, td { padding: .5rem; border: 1px solid #8888; text-align: left; }
-    form { display: grid; gap: .75rem; max-width: 420px; }
-    input, select, textarea, button { padding: .6rem; font: inherit; }
-    code, pre { background: #8882; border-radius: 4px; }
-    pre { padding: 1rem; overflow: auto; }
-  </style>
+  <meta name="description" content="Yihang Feng studies quantitative finance, machine learning, and statistical modeling, with interests in time series and causal inference.">
+  <meta name="theme-color" content="#f5f4f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111311" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://yihangfeng.com/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yihang Feng">
+  <meta property="og:title" content="Yihang Feng — Quantitative Finance, Machine Learning and Statistics">
+  <meta property="og:description" content="Economics and Statistics student working across quantitative finance, machine learning, and statistical modeling.">
+  <meta property="og:url" content="https://yihangfeng.com/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Yihang Feng — Quantitative Finance, Machine Learning and Statistics">
+  <meta name="twitter:description" content="Economics and Statistics student working across quantitative finance, machine learning, and statistical modeling.">
+
+  <title>Yihang Feng — Quantitative Finance, Machine Learning and Statistics</title>
 </head>
 <body>
-  <header>
-    <h1>网站功能测试页</h1>
-    <p>看到此页说明 HTML 与 CSS 已成功加载。</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="/" aria-label="Yihang Feng, home">YF</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>文字与链接</h2>
-      <h3>三级标题</h3>
-      <p>普通文字、<strong>粗体</strong>、<em>斜体</em>、<mark>高亮</mark>、<code>行内代码</code>。</p>
-      <p><a href="#form">页内链接</a> · <a href="https://example.com">外部链接</a></p>
-      <blockquote>这是一段引用文字。</blockquote>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <p class="eyebrow">Quantitative Finance · Machine Learning · Statistical Modeling</p>
+      <h1 id="hero-title">Yihang Feng</h1>
+      <p class="hero-intro">Economics and Statistics student working at the intersection of quantitative finance, machine learning, and time-series modeling.</p>
+      <div class="actions" aria-label="Profile links">
+        <a class="button button-primary" href="https://github.com/0boluan0" rel="me">GitHub</a>
+        <a class="button" href="mailto:fengyihang04@gmail.com">Email</a>
+        <a class="button" href="/assets/files/cv.pdf" download>Download CV</a>
+      </div>
     </section>
 
-    <section>
-      <h2>图片与图形</h2>
-      <svg viewBox="0 0 640 180" role="img" aria-label="SVG 测试图">
-        <defs><linearGradient id="g"><stop stop-color="#6c5ce7"/><stop offset="1" stop-color="#00cec9"/></linearGradient></defs>
-        <rect width="640" height="180" rx="16" fill="url(#g)"/>
-        <circle cx="100" cy="90" r="48" fill="white" opacity=".85"/>
-        <text x="180" y="103" fill="white" font-size="36">SVG 正常显示</text>
-      </svg>
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="section-number" aria-hidden="true">01</p>
+        <h2 id="about-title">About</h2>
+      </div>
+      <div class="about-copy">
+        <p>I am Yihang Feng (冯一航), with a background in Economic Statistics from Huazhong University of Science and Technology. My work centers on quantitative finance and machine learning, particularly problems involving financial and economic data.</p>
+        <p>I am interested in time series, causal inference, deep learning, graph learning, and practical AI systems. I primarily work with Python, statsmodels, scikit-learn, and PyTorch.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>列表与表格</h2>
-      <ul><li>无序列表 A</li><li>无序列表 B</li></ul>
-      <ol><li>有序列表 1</li><li>有序列表 2</li></ol>
-      <table>
-        <thead><tr><th>类型</th><th>状态</th></tr></thead>
-        <tbody><tr><td>HTML</td><td>正常</td></tr><tr><td>CSS</td><td>正常</td></tr></tbody>
-      </table>
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="section-number" aria-hidden="true">02</p>
+        <h2 id="projects-title">Selected Projects</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="status">Active</span>
+            <span>macOS</span>
+          </div>
+          <h3><a href="https://github.com/0boluan0/Slipstream">Slipstream<span aria-hidden="true"> ↗</span></a></h3>
+          <p>A lightweight macOS English-assistance system designed to reduce friction in reading and writing.</p>
+          <ul class="tag-list" aria-label="Technologies">
+            <li>JavaScript</li>
+            <li>Swift</li>
+            <li>Python</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="status">Active</span>
+            <span>macOS</span>
+          </div>
+          <h3><a href="https://github.com/0boluan0/Chronicle">Chronicle<span aria-hidden="true"> ↗</span></a></h3>
+          <p>A local-first activity timeline for understanding how work time is spent, with private on-device storage and reporting.</p>
+          <ul class="tag-list" aria-label="Technologies">
+            <li>Swift</li>
+            <li>SwiftUI</li>
+            <li>SQLite</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
-    <section id="form">
-      <h2>表单控件</h2>
-      <form onsubmit="event.preventDefault(); document.querySelector('#result').textContent = '提交事件正常';">
-        <label>文本输入 <input name="text" placeholder="请输入内容"></label>
-        <label>日期选择 <input name="date" type="date"></label>
-        <label>下拉选择 <select name="select"><option>选项 A</option><option>选项 B</option></select></label>
-        <label><input name="check" type="checkbox"> 复选框</label>
-        <label>多行文本 <textarea name="message" rows="3"></textarea></label>
-        <button>测试提交</button>
-        <output id="result" aria-live="polite"></output>
-      </form>
+    <section class="section container" id="interests" aria-labelledby="interests-title">
+      <div class="section-heading">
+        <p class="section-number" aria-hidden="true">03</p>
+        <h2 id="interests-title">Interests</h2>
+      </div>
+      <ul class="interest-list">
+        <li>Quantitative Finance</li>
+        <li>Time Series</li>
+        <li>Causal Inference</li>
+        <li>Machine Learning</li>
+        <li>Deep Learning</li>
+        <li>Graph Learning</li>
+        <li>AI Systems</li>
+      </ul>
     </section>
 
-    <section>
-      <h2>原生组件</h2>
-      <details><summary>点击展开</summary><p>折叠组件工作正常。</p></details>
-      <p><label>进度：<progress value="70" max="100">70%</progress></label></p>
-      <dialog id="dialog"><p>原生弹窗工作正常。</p><button onclick="this.closest('dialog').close()">关闭</button></dialog>
-      <button onclick="document.querySelector('#dialog').showModal()">打开弹窗</button>
-    </section>
-
-    <section>
-      <h2>代码块</h2>
-      <pre><code>console.log('JavaScript loaded');</code></pre>
+    <section class="section contact container" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <p class="section-number" aria-hidden="true">04</p>
+        <h2 id="contact-title">Contact</h2>
+      </div>
+      <div>
+        <p class="contact-intro">For research, projects, or other opportunities, the best way to reach me is by email.</p>
+        <dl class="contact-list">
+          <div><dt>Email</dt><dd><a href="mailto:fengyihang04@gmail.com">fengyihang04@gmail.com</a></dd></div>
+          <div><dt>GitHub</dt><dd><a href="https://github.com/0boluan0">github.com/0boluan0</a></dd></div>
+          <div><dt>Website</dt><dd><a href="https://yihangfeng.com">yihangfeng.com</a></dd></div>
+        </dl>
+      </div>
     </section>
   </main>
 
-  <footer><small>静态页面测试 · <span id="js">JavaScript 未运行</span></small></footer>
-  <script>document.querySelector('#js').textContent = 'JavaScript 正常运行';</script>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Yihang Feng</p>
+      <a href="#main">Back to top ↑</a>
+    </div>
+  </footer>
 </body>
 </html>
