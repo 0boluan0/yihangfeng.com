@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>网站功能测试页</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { max-width: 900px; margin: auto; padding: 2rem; line-height: 1.6; }
+    section { margin: 2rem 0; padding: 1.25rem; border: 1px solid #8886; border-radius: 12px; }
+    img, video { max-width: 100%; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: .5rem; border: 1px solid #8888; text-align: left; }
+    form { display: grid; gap: .75rem; max-width: 420px; }
+    input, select, textarea, button { padding: .6rem; font: inherit; }
+    code, pre { background: #8882; border-radius: 4px; }
+    pre { padding: 1rem; overflow: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>网站功能测试页</h1>
+    <p>看到此页说明 HTML 与 CSS 已成功加载。</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>文字与链接</h2>
+      <h3>三级标题</h3>
+      <p>普通文字、<strong>粗体</strong>、<em>斜体</em>、<mark>高亮</mark>、<code>行内代码</code>。</p>
+      <p><a href="#form">页内链接</a> · <a href="https://example.com">外部链接</a></p>
+      <blockquote>这是一段引用文字。</blockquote>
+    </section>
+
+    <section>
+      <h2>图片与图形</h2>
+      <svg viewBox="0 0 640 180" role="img" aria-label="SVG 测试图">
+        <defs><linearGradient id="g"><stop stop-color="#6c5ce7"/><stop offset="1" stop-color="#00cec9"/></linearGradient></defs>
+        <rect width="640" height="180" rx="16" fill="url(#g)"/>
+        <circle cx="100" cy="90" r="48" fill="white" opacity=".85"/>
+        <text x="180" y="103" fill="white" font-size="36">SVG 正常显示</text>
+      </svg>
+    </section>
+
+    <section>
+      <h2>列表与表格</h2>
+      <ul><li>无序列表 A</li><li>无序列表 B</li></ul>
+      <ol><li>有序列表 1</li><li>有序列表 2</li></ol>
+      <table>
+        <thead><tr><th>类型</th><th>状态</th></tr></thead>
+        <tbody><tr><td>HTML</td><td>正常</td></tr><tr><td>CSS</td><td>正常</td></tr></tbody>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>表单控件</h2>
+      <form onsubmit="event.preventDefault(); document.querySelector('#result').textContent = '提交事件正常';">
+        <label>文本输入 <input name="text" placeholder="请输入内容"></label>
+        <label>日期选择 <input name="date" type="date"></label>
+        <label>下拉选择 <select name="select"><option>选项 A</option><option>选项 B</option></select></label>
+        <label><input name="check" type="checkbox"> 复选框</label>
+        <label>多行文本 <textarea name="message" rows="3"></textarea></label>
+        <button>测试提交</button>
+        <output id="result" aria-live="polite"></output>
+      </form>
+    </section>
+
+    <section>
+      <h2>原生组件</h2>
+      <details><summary>点击展开</summary><p>折叠组件工作正常。</p></details>
+      <p><label>进度：<progress value="70" max="100">70%</progress></label></p>
+      <dialog id="dialog"><p>原生弹窗工作正常。</p><button onclick="this.closest('dialog').close()">关闭</button></dialog>
+      <button onclick="document.querySelector('#dialog').showModal()">打开弹窗</button>
+    </section>
+
+    <section>
+      <h2>代码块</h2>
+      <pre><code>console.log('JavaScript loaded');</code></pre>
+    </section>
+  </main>
+
+  <footer><small>静态页面测试 · <span id="js">JavaScript 未运行</span></small></footer>
+  <script>document.querySelector('#js').textContent = 'JavaScript 正常运行';</script>
+</body>
+</html>
