@@ -31,13 +31,13 @@ Copy an existing `<article class="project-card">` block in the Selected Projects
 
 ## Replace the CV
 
-The Download CV link points to `assets/files/cv.pdf`. That file is not included yet, so the link will return a 404 until a CV is added. To enable it, place the public PDF at:
+The Download CV link points to the public PDF at:
 
 ```text
 assets/files/cv.pdf
 ```
 
-Keep the filename unchanged, or update the link in `index.html`.
+Replace that file to publish a new version. Keep the filename unchanged, or update the link in `index.html`.
 
 ## Deployment
 
