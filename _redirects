@@ -2,3 +2,9 @@
 /README.md / 301
 /.gitattributes / 301
 /.gitignore / 301
+
+# Removed files. Cloudflare Pages keeps serving deleted assets from its
+# cache for up to a week; redirects take precedence over that fallback.
+/design-qa.md / 301
+/assets/files/.gitkeep / 301
+/assets/images/.gitkeep / 301
